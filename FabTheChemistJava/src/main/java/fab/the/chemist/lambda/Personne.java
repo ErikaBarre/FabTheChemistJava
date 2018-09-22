@@ -13,6 +13,15 @@ public class Personne {
 
 	String nom;
 	String prenom;
+	int age;
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
 
 	public String getPrenom() {
 		return prenom;
