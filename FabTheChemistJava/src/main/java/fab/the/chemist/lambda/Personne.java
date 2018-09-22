@@ -11,6 +11,10 @@ public class Personne {
 		super();
 	}
 
+	public Personne(String string, String string2, int i) {
+		super();
+	}
+
 	String nom;
 	String prenom;
 	int age;

@@ -8,6 +8,7 @@ import java.util.function.Function;
 import java.util.function.IntFunction;
 import java.util.function.LongFunction;
 import java.util.function.Supplier;
+import java.util.function.ToDoubleFunction;
 
 public class LambdaFunctionalInternal {
 	
@@ -42,9 +43,20 @@ public class LambdaFunctionalInternal {
 		
 		
 		LongFunction longFunction = x -> x * 2;
+		longFunction.apply(20);
 		IntFunction  intFunction  = x -> x * 2;
 		Callable<String> monCallable = () -> "Mon traitement";
+		try {
+			monCallable.call();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Supplier<String> monSupplier = () -> "Mon traitement"; 
+		monSupplier.get();
+		
+		ToDoubleFunction<Integer> toDoubleFunction = x -> x * 2;
+		toDoubleFunction.applyAsDouble(123456);
 		
 	}
 
