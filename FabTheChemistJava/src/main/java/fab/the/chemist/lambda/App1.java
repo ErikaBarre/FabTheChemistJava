@@ -3,6 +3,10 @@ package fab.the.chemist.lambda;
 public class App1 {
 
 	/*
+	 * marker interface : interface sans méthode comme serializable
+	 * functional interface : interface avec une seule méthode (utilisé pour lambda) (on peut aussi overrider les methodes de object)
+	 * 
+	 * 
 	 * lambda permet l'établissement de la programmation fonctionel
 	 * rend le code plus concis et lisible
 	 * capable de supporter des process en parallele
