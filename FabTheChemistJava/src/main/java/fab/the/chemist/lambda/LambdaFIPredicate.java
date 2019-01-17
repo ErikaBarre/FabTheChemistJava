@@ -7,6 +7,8 @@ import java.util.function.LongPredicate;
 import java.util.function.Predicate;
 
 /*
+ * PATTERN MATCHING
+ * 
 Les interfaces fonctionnelles de type Predicate (Predicate, BiPredicate, DoublePredicate, IntPredicate, LongPredicate) définissent des fonctions 
 qui attendent différents types de paramètres et renvoient une valeur booléenne.
 L'interface fonctionnelle Predicate<T> définit une fonction qui effectue une opération sur un objet et renvoie une valeur booléenne.
